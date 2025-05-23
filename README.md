@@ -82,8 +82,4 @@ This will demonstrate the recommendation system on a single appraisal from the v
 
 - Python 3.6+
 - numpy
-- scikit-learn
-
-## License
-
-[Your chosen license] 
+- scikit-learn 
