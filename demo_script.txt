@@ -1,0 +1,22 @@
+Demo Script: Property Recommendation System
+
+This script demonstrates the property recommendation system by loading a single appraisal from the validation dataset and recommending the top 3 comparable properties for the subject property.
+
+Project Overview:
+- The system analyzes a subject property and hundreds of nearby candidate properties to recommend the best comps.
+- It uses a labeled dataset of 100 appraisals, where each appraisal contains a subject property, candidate properties, and selected comps.
+- The system is evaluated on a validation dataset of unseen appraisals.
+- An explainability layer outputs reasoning for each recommended comp (e.g., similar GLA, lot size, recent sale date).
+
+Steps:
+1. Load the validation dataset from "data/val_processed.json".
+2. Select the first appraisal from the dataset.
+3. Extract the subject property and candidate properties.
+4. Run the recommendation system to get the top 3 recommended comps.
+5. For each recommended comp, print its address, ID, and a human-readable explanation of why it was selected (e.g., "similar GLA", "close lot size", "similar year built", etc.).
+
+Output:
+- The subject property's address.
+- A list of the top 3 recommended comps, each with its address, ID, and explanation.
+
+This demo provides a quick overview of how the recommendation system works and how it explains its recommendations. 
